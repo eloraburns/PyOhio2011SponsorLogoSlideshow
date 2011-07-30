@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script src="jquery-1.4.2.min.js" charset="utf-8" type="text/javascript"></script>
+		<script src="easing.js" charset="utf-8" type="text/javascript"></script>
+		<script src="cycle.js" charset="utf-8" type="text/javascript"></script>
+		<script src="autoresize.js" charset="utf-8" type="text/javascript"></script>
+		<style type="text/css" media="screen">
+			#slideshow {
+				text-align: center;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slideshow">
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" height="100%" src="intellovations-logo-nobox.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="Freshbooks.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="oralogo_bk200.gif" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="Emma_logo_160x54.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="KCT-logo.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="agi_logo_160x80.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="as_logo_2010_300px.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="dabeazlogo.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="enthought_new.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="github.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="microsoft-transparent.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="nsp_logo_long.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="sourceforge-2011-logo-158x27.png" /></div>
+			<div style="width: 100%; height: 100%;"><img style="text-align: center;" width="100%"  src="wingware-sponsor-180x93.png" /></div>
+		</div>
+		<script>
+			$(function(){
+				var slideshow = $('#slideshow');
+				slideshow.cycle({
+					aspect: true,
+					easing: 'easeOutBack',
+					fit: true,
+					fx: 'fade',
+					timeout: 500,
+				});
+			});
+		</script>
+	</body>
+</html>
